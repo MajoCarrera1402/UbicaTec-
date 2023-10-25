@@ -1,0 +1,337 @@
+<!-- pagina3.html (Tercera página) -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mapa Ito</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light " style="background: rgba(2, 17, 190, 0.648);">
+            <div class="container-fluid">
+                
+              <a><img width="30" height="24" class="d-inline-block align-text-top" src="img/LOGOITO.png" alt="Logo"> UBICATEC</a>
+              <div class="" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </div>
+              </div>
+
+            </div>
+          </nav>
+        <!-- Navbar -->
+    </header>
+
+    
+    <div id="mapaResultado" class="container-fluid">
+        <!-- El iframe se agregará aquí dinámicamente -->
+    </div>
+
+    <script>
+        const parametros = new URLSearchParams(window.location.search);
+        const seleccion1 = parametros.get('opcion1');
+        const seleccion2 = parametros.get('opcion2');
+        const resultado = `${seleccion1}${seleccion2}`;
+        const mapaResultado = document.getElementById('mapaResultado');
+
+        // Utiliza un switch para seleccionar el mapa en base a resultado
+        switch (resultado) {
+            case 'a1':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1TXU1oYfKa9-9Caz2do2STCpc5IHfrww&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'a2':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/2/embed?mid=121Dik0Qc6T44asQkg8NEWaJDGKPXo0w&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'a3':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1slAWbqeUn17s3iTToMR9fysAqXer4pk&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'a4':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1dChV4SVHu9wJGjTvAFov-pBxrk92L4g&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                              </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'a5':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1vRF7katOthwjJ44BV7gW6__6J9oOO5c&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'a6':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1x0vfjqc5I4IPRvk2ivhRxYJl5ypxibs&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'a7':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/2/embed?mid=13e8YgO8zVzigqHve3hJzTph5OmP3NYk&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'a8':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/2/embed?mid=10ssI1_vd9ErGSLbpy8tupdMNvnBGLHo&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'b1':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1mDEdX5iT25pqNUIyyTaECeHo6tvVWqU&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'b2':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1oZLMh0OOBUHztPW5TJOuwp6qva0bWCE&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'b3':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1gIlXCRlDsDIFc8WORXTAa5QR-q8TbgI&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'b4':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1tsiaO8gOBtIViAVoWeX8Nk-aG8LtbOY&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'b5':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1DL52CU3zjAQJJYr5rsgj0g6X1xGOWog&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'b6':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1WFn8L3wk3_H-UrmxDHNHY0-Ttj_nygU&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'b7':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/2/embed?mid=18GRzna5ZbpovPuf7BGvx-vk_0by6BEs&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'b8':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1K4uvSXumEkwXGkiOVWi2mAn-vNccE4c&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+// edificio c
+            case 'c1':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1j1gq19A6bd6Gl5TDqU9kH1gh_9jdsTs&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'c2':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1bY4bEN3sPFMgW_GUPn51dR4dxWGrFqY&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'c3':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1PdjAofkl0H0QIYg63_RYnPr2AWMwFko&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'c4':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1VfnBftIbEPWO6GxslYCD_nqyEfhOA0s&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'c5':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">                                  </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'c6':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">                                  </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'c7':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/embed?mid=14SI6l19kz6LBoDsJbRaXzfI9t3ptTHw&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'c8':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/embed?mid=19_Y-JnKoPIIkWM2U5HT-97BuaSgYU88&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+
+// EDIFICIO D
+            case 'd1':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/embed?mid=1NaeEfUB9tid8nAwyTUwjzDclwII4uN8&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'd2':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/embed?mid=1JZSWK6HilM64LqtoO9H28LwkxZb4Qoc&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'd3':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/embed?mid=1ezzsBdKyxEX8k_jjOz2bW65Qnh7szng&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'd4':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/embed?mid=1jhB1LwnaVIumb0phMQosI729MQ4g1tU&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'd5':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/embed?mid=1T5uhzC8aXiRwTf1rk--cUIfmANyJSd0&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'd6':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/embed?mid=1QGQSqE1z44axR_ttks_mmBnooq8fPlw&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'd7':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/embed?mid=1swnxUCeX_wDtL97iuAbLXM_4l-UAy6w&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'd8':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/embed?mid=1dIbAblIoQ72rISlF8Fq4YWRPf7rDF7E&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+// ENTRADA PRINCIPAL
+            case 'e1':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/embed?mid=1eEoc-bLH7LCMSECMv2n2uNAaWhGT_jY&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'e2':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/embed?mid=1JhOoO53JthyTSvGaXlUJPRYKxefjKV0&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'e3':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/embed?mid=1xiPMMDokCMqUQflWwK4HrfjZXCf3ACE&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'e4':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/embed?mid=11Ygr__44VEY2bxfJktVn_Be5aHd1_R8&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'e5':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/embed?mid=1avX6UiHyIX6Ktfg6sSO8jaUB5P80cGg&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'e6':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/embed?mid=1ib_a9PvKPqRKKUL0WKWmgFlYamQ5RE4&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'e7':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/embed?mid=1WUvrB4T2ahAIDRI3peAWLUjuTDX1iNE&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'e8':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/embed?mid=1t0BKLNDrObQpKSN1LfAMKUin3aTCWkY&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+// ENTRADA 2
+
+            case 'f1':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/embed?mid=1TkHjOxOw0_QIMKFNf9Pmc7O1zjCs6gI&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'f2':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/embed?mid=1kodaZWaMHafkuM6Cy7btIPhwTUImP_Y&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'f3':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/embed?mid=1JPSFqHUO3K2kzAIs2XM5ZWfS5FuLEt8&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'f4':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/embed?mid=1bFRodYBsp799ox1LZl01OpNV-V9UyhE&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            case 'f5':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/4/embed?mid=1xCKZU4RcwPOpPXfYnGTPRuwkOU2MhHg&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p></p> </div></div>  ';
+                break;
+
+            case 'f6':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/4/embed?mid=1DkDzYqeczrui18frCVK0SqCZYlLwC5c&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>Usted se encuentra en la misma ubicacion</p> </div></div>  ';
+                break;
+
+            case 'f7':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/4/embed?mid=1DkDzYqeczrui18frCVK0SqCZYlLwC5c&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'f8':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/4/embed?mid=1xDBHg_9mhTin46XiDyhtiQXwqwfWYBk&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+// LABORATORIO
+
+            case 'g1':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/4/embed?mid=1YwQlykthom-PjXojBeuyn_dosmHH64Q&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'g2':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/4/embed?mid=1UHLKuoJTG6QyNqnX_7calP1bsY0dVI4&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'g3':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/4/embed?mid=1_sk1uS-q8X1HgxQ0ocyPPqNT2BLwzlI&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'g4':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/4/embed?mid=1jvIl42jarcRhov7yyIF_Nja4Gad_VFU&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'g5':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/4/embed?mid=1tSHqDinx2qyb0xWgicUL6blOmuttK2Q&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'g6':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/4/embed?mid=14V6rrHIGHmY2xqjUhzOZRyHNLMVrQCI&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'g7':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/4/embed?mid=1sm4sOLrhIZHy7fWLXro16oxHAomJPHA&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'g8':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/4/embed?mid=1UMGYtGXTFJl1JDqzdq-g1x3aB4GWTvE&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+//DEPARTAMENTO DE INGLES 
+
+
+            case 'h1':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/4/embed?mid=1UMGYtGXTFJl1JDqzdq-g1x3aB4GWTvE&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'h2':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/4/embed?mid=1UMGYtGXTFJl1JDqzdq-g1x3aB4GWTvE&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'h3':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/4/embed?mid=1hsaQD1knOYVO1oK-Hod6fpkqrGFFy9I&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'h4':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/4/embed?mid=1nENyIiG4RALKEqS0CHIRZDFXRntJzGI&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'h5':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/4/embed?mid=1k1xKF8L4OvY7_vlhfDN4LT6Jo1MZEP0&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'h6':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/4/embed?mid=1-QXWhrMYlbn7TAhTSe-m7Ma97huCv9Y&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'h7':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/4/embed?mid=1KyX3NT7Tsefdz3CyBkzKkOlm0c9IcF4&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+            case 'h8':
+                mapaResultado.innerHTML = '<div class="row"><div class="col-lg-9">     <iframe src="https://www.google.com/maps/d/u/4/embed?mid=1g924q8jLpdGnv48PcAptxL2LfL9lowU&ehbc=2E312F" width="100%" height="100%" style="height: 100vh;"></iframe>                             </div> <div class="col-lg-3"><p>XDDDDDDD</p> </div></div>  ';
+                break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+            default:
+                // Si resultado no coincide con ningún caso, puedes manejarlo de otra manera o mostrar un mensaje de error.
+                mapaResultado.innerHTML = '<p>Combinación no válida.</p>';
+        }
+    </script>
+</body>
+</html>
